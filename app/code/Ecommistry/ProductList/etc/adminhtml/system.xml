@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="customer" sortOrder="10" translate="label">
+			<label>customer</label>
+		</tab>
+		<section id="customer" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>customer</label>
+			<tab>customer</tab>
+			<resource>Ecommistry_ProductList::config_ecommistry_productlist</resource>
+			<group id="handle_display" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Handle Products Display </label>
+				<field id="display_limit" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Set limited number to display</label>
+					<comment>Set limited number to display on customer account page</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
